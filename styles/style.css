@@ -25,7 +25,7 @@ img{
   nav ul{
     display: none;
   }
-.sm-cart{
+.cart{
   visibility: visible;
 }
 .banner-container{
@@ -33,6 +33,12 @@ img{
   margin-top: 28px;
 }
 .banner-content{
+  margin-top: 20px;
+}
+.plant-container{
+  grid-template-columns: repeat(2, 1fr);
+}
+.our-plants{
   margin-top: 20px;
 }
 }
