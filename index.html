@@ -191,10 +191,12 @@
           shop. From classic roses to exotic blooms, we offer a wide variety of
           fresh.
         </p>
-        <div class="grid grid-cols-2 gap-y-[10px] gap-x-[14px] mt-[40px] deals-container">
+        <div
+          class="grid grid-cols-2 gap-y-[10px] gap-x-[14px] mt-[40px] deals-container"
+        >
           <div
             style="
-              background: url(./assets/deal-bloom.png); 
+              background: url(./assets/deal-bloom.png);
               background-position: center;
               background-size: cover;
             "
@@ -208,9 +210,8 @@
 
           <div
             style="
-              background-image:  url('./assets/deal-zabo.png');
+              background-image: url('./assets/deal-zabo.png');
               background-position: center;
-              
             "
             class="deals-2 row-span-2 py-[155px] rounded-[8px]"
           >
@@ -227,9 +228,7 @@
             "
             class="deals py-[65px] rounded-8px"
           >
-            <p
-              class="text-[1.25rem] noto-serif text-white text-center"
-            >
+            <p class="text-[1.25rem] noto-serif text-white text-center">
               30% Off | Ana Plant
             </p>
             <p class="text-center text-white"><a href="">Shop Now</a></p>
@@ -237,12 +236,56 @@
         </div>
       </section>
       <!-- join section -->
-       <section style="background: url('./assets/news-letter-bg.png');" class="w-[100%]">
-       <p class="text-[3rem] noto-serif font-bold text-white text-center">Join the colorful Bunch</p>
-
-       <input class="w-[60%] bg-white text-[#808080]" type="text" placeholder="Write email">
-       </section>
+      <section
+        style="
+          background: url('./assets/news-letter-bg.png');
+          background-size: cover;
+          background-position: center;
+        "
+        class="w-[100%] py-[175px] mt-[100px]"
+      >
+        <p class="text-[3rem] noto-serif font-bold text-white text-center">
+          Join the colorful Bunch
+        </p>
+        <div class="flex justify-center items-center mt-[10px]">
+          <input
+            class="join-input w-[640px] bg-white text-[#808080] h-[35px] py-[6px] px-[15px]"
+            type="text"
+            placeholder="Write email"
+          /><button class="bg-[#E95A08] h-[35px] py-[6px] px-[20px] ml-[-4px]">
+            Subscribe
+          </button>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="flex justify-evenly items-start gap-[50px] mt-[60px] pb-[90x]">
+      <div class="max-w-[360px]">
+        <img src="./assets/logo.png" alt="" />
+        <p class="text-[1.3rem] text-[#8987A1] mt-[10px]">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop.
+        </p>
+      </div>
+      <div class="text-[#8987A1]">
+        <p class="mt-[26px]"><a href=""></a>Contact</p>
+        <p class="mt-[26px]"><a href="">Home</a></p>
+        <p class="mt-[26px]"><a href="">About Us</a></p>
+        <p class="mt-[26px]"><a href=""></a>Blog</p>
+        <p class="mt-[26px]"><a href=""></a>FAQ</p>
+      </div>
+      <div class="text-[#8987A1]">
+        <p class="mt-[26px]" 10px=""><a href="">Features</a></p>
+        <p class="mt-[26px]" 10px=""><a href="">Pricing</a></p>
+        <p class="mt-[26px]" 10px=""><a href="">Privacy Policy</a></p>
+        <p class="mt-[26px]" 10px=""><a href="">Terms of Service</a></p>
+        <p class="mt-[26px]" 10px=""><a href="">Help Center</a></p>
+      </div>
+      <div class="flex items-center gap-[18px]">
+        <a href=""><img src="./assets/icon-linkedin.png" alt="" /></a>
+        <a href=""><img src="./assets/icon-twitter.png" alt="" /></a>
+        <a href=""><img src="./assets/icon-facebook.png" alt="" /></a>
+        <a href=""><img src="./assets/icon-youtube.png" alt="" /></a>
+      </div>
+    </footer>
   </body>
 </html>
