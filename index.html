@@ -10,17 +10,24 @@
       crossorigin="anonymous"
     ></script>
     <!-- inter font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<!-- noto-serif font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- noto-serif font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Home</title>
   </head>
   <body class="inter bg-[#F5F8FF] pt-[10px]">
-    <header class="max-w-[1140px] mx-auto">
+    <header class="max-w-[1140px] mx-auto p-[20px]">
+      <!-- navbar -->
       <nav class="flex items-center justify-between">
         <img src="./assets/logo.png" alt="company logo" />
         <ul class="flex gap-[40px]">
@@ -30,10 +37,34 @@
           <li>
             <a href=""><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a>
           </li>
+          <div class="sm-cart">
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
         </ul>
       </nav>
+      <!-- banner -->
+      <div class="flex justify-center items-end mt-[170px] banner-container">
+        <div class="max-w-[570px] banner-content">
+          <p class="noto-serif text-[4rem] font-bold">
+            ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span>
+          </p>
+          <p class="text-[1.3rem] text-[#8987A1]">
+            Discover a vibrant selection of blooms at our flower shop—from
+            elegant roses to rare, exotic varieties. Whether you're marking a
+            special moment or simply spreading joy, our fresh flowers are the
+            perfect choice for any occasion.
+          </p>
+        </div>
+        <img src="./assets/hero-flower.png" alt="" />
+      </div>
     </header>
-    <main></main>
+    <main>
+       <!-- our plant section -->
+        <section class="mt-[100px] max-w-[1140px] mx-auto">
+         <div> <p class="text-[3rem] noto-serif font-bold text-center">Our <span class="text-[#E95A08]">Plants</span></p>
+          <p class="text-[1.3rem] text-[#8987A1] text-center">Delight in the vibrant colors and captivating scents of our flower shop. Whether you love timeless roses or rare exotic blossoms, we have a stunning selection of fresh blooms waiting for you</p></div>
+        </section>
+    </main>
     <footer></footer>
   </body>
 </html>
