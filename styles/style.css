@@ -22,7 +22,7 @@ img{
 
 @media screen and (max-width: 576px) {
 
-  nav ul{
+  nav ul, .badge{
     display: none;
   }
 .cart{
@@ -32,7 +32,7 @@ img{
   flex-direction: column-reverse;
   margin-top: 28px;
 }
-.banner-content{
+.banner-content, .plant-lover{
   margin-top: 20px;
 }
 .plant-container{
@@ -40,5 +40,18 @@ img{
 }
 .our-plants{
   margin-top: 20px;
+}
+.trust-container{
+  flex-direction: column;
+}
+.deals-container{
+  grid-template-columns: repeat(1, 1fr);
+}
+.deals-2{
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.zabo{
+  font-size: 1.25rem
 }
 }
