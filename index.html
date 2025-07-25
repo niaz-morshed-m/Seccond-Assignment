@@ -27,6 +27,7 @@
   </head>
   <body class="inter bg-[#F5F8FF] pt-[10px]">
     <header class="max-w-[1140px] mx-auto p-[20px]">
+
       <!-- navbar -->
       <nav class="flex items-center justify-between">
         <img src="./assets/logo.png" alt="company logo" />
@@ -37,11 +38,12 @@
           <li>
             <a href=""><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a>
           </li>
-          <!-- <li class="absolute  cart">
-            <a href=""><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a>
-          </li> -->
         </ul>
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping"></i> Cart ($56)
+        </div>
       </nav>
+
       <!-- banner -->
       <div class="flex justify-center items-end mt-[170px] banner-container">
         <div class="max-w-[570px] banner-content">
@@ -59,6 +61,7 @@
       </div>
     </header>
     <main>
+      
       <!-- our plant section -->
       <section class="our-plants mt-[100px] max-w-[1140px] mx-auto p-[20px]">
         <div>
@@ -71,7 +74,6 @@
             have a stunning selection of fresh blooms waiting for you
           </p>
         </div>
-
         <div class="plant-container grid grid-cols-4 gap-[25px] mt-[50px]">
           <div class="plant max-w-[270px] text-center">
             <img src="./assets/sample-flower-image.png" alt="plant-img" />
@@ -182,7 +184,7 @@
       </section>
 
       <!-- latest deal section -->
-      <section class="mt-[70px] max-w-[1140px] mx-[auto] p-[20px]">
+      <section class="mt-[70px] max-w-[1140px] mx-[auto] p-[20px] latest-deal">
         <p class="text-[3rem] noto-serif font-bold text-center">
           Latest <span class="text-[#E95A08]">Deals</span>
         </p>
@@ -191,16 +193,19 @@
           shop. From classic roses to exotic blooms, we offer a wide variety of
           fresh.
         </p>
-        <div
-          class="grid grid-cols-2 gap-y-[10px] gap-x-[14px] mt-[40px] deals-container"
-        >
+        <div class="gap-y-[12px] gap-x-[14px] mt-[40px] deals-container">
           <div
             style="
-              background: url(./assets/deal-bloom.png);
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url(./assets/deal-bloom.png);
               background-position: center;
               background-size: cover;
+              background-repeat: no-repeat;
             "
-            class="deals py-[65px] rounded-[8px]"
+            class="deals-1 py-[65px] rounded-[8px]"
           >
             <p class="text-[1.25rem] noto-serif text-white text-center">
               60% Off | Bloom Plant
@@ -210,23 +215,34 @@
 
           <div
             style="
-              background-image: url('./assets/deal-zabo.png');
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('./assets/deal-zabo.png');
               background-position: center;
+              background-repeat: no-repeat;
             "
-            class="deals-2 row-span-2 py-[155px] rounded-[8px]"
+            class="deals-2 py-[155px] rounded-[8px]"
           >
             <p class="noto-serif text-[2.50rem] text-white text-center zabo">
               25% Off | Zabo Plant
             </p>
             <p class="text-center text-white"><a href="">Shop Now</a></p>
           </div>
+
           <div
             style="
-              background-image: url('./assets/deal-ana.png');
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('./assets/deal-ana.png');
               background-position: center;
               background-size: cover;
+              background-repeat: no-repeat;
             "
-            class="deals py-[65px] rounded-8px"
+            class="deals-3 py-[65px] rounded-8px"
           >
             <p class="text-[1.25rem] noto-serif text-white text-center">
               30% Off | Ana Plant
@@ -235,6 +251,7 @@
           </div>
         </div>
       </section>
+
       <!-- join section -->
       <section
         style="
@@ -242,7 +259,7 @@
           background-size: cover;
           background-position: center;
         "
-        class="w-[100%] py-[175px] mt-[100px]"
+        class="w-[100%] py-[175px] mt-[100px] join-sec"
       >
         <p class="text-[3rem] noto-serif font-bold text-white text-center">
           Join the colorful Bunch
@@ -258,7 +275,9 @@
         </div>
       </section>
     </main>
-    <footer class="flex justify-evenly items-start gap-[50px] mt-[60px] p-[25px]">
+    <footer
+      class="flex justify-evenly items-start gap-[50px] mt-[60px] p-[25px]"
+    >
       <div class="max-w-[360px]">
         <img src="./assets/logo.png" alt="" />
         <p class="text-[1.3rem] text-[#8987A1] mt-[10px]">

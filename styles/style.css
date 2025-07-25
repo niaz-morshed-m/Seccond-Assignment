@@ -1,7 +1,8 @@
-img{
+img {
   max-width: 100%;
 }
 
+/* shared styles */
 .noto-serif {
   font-family: noto Serif;
   font-optical-sizing: auto;
@@ -12,52 +13,86 @@ img{
   font-optical-sizing: auto;
 }
 
+/* nav */
+.cart {
+  display: none;
+}
 
-.sm-cart{
-  position: absolute;
-  visibility: hidden;
+/* latest deal style */
+.deals-1 {
+  grid-area: deals-1;
+}
+.deals-2 {
+  grid-area: deals-2;
+}
+.deals-3 {
+  grid-area: deals-3;
+}
+
+.deals-container {
+  display: grid;
+  grid-template-areas:
+    "deals-1 deals-2 deals-2"
+    "deals-1 deals-2 deals-2"
+    "deals-3 deals-2 deals-2"
+    "deals-3 deals-2 deals-2";
 }
 
 /* responsive for small/mobile devices */
 
 @media screen and (max-width: 576px) {
-
-  nav ul, .badge{
+  nav ul,
+  .badge {
     display: none;
   }
-.cart{
-  visibility: visible;
-}
-.banner-container{
-  flex-direction: column-reverse;
-  margin-top: 28px;
-}
-.banner-content, .plant-lover{
-  margin-top: 20px;
-}
-.plant-container{
-  grid-template-columns: repeat(2, 1fr);
-}
-.our-plants{
-  margin-top: 20px;
-}
-.trust-container{
-  flex-direction: column;
-}
-.deals-container{
-  grid-template-columns: repeat(1, 1fr);
-}
-.deals-2{
-  padding-top: 65px;
-  padding-bottom: 65px;
-}
-.zabo{
-  font-size: 1.25rem
-}
-.join-input{
-  width: 300px;
-}
-footer{
-  flex-direction: column;
-}
+
+  .banner-container {
+    flex-direction: column-reverse;
+    margin-top: 28px;
+  }
+  .banner-content,
+  .plant-lover {
+    margin-top: 20px;
+  }
+  .plant-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our-plants {
+    margin-top: 20px;
+  }
+  .trust-container {
+    flex-direction: column;
+  }
+  .deals-container {
+    display: grid;
+    grid-template-areas:
+      "deals-1"
+      "deals-2"
+      "deals-3";
+  }
+  .deals-2 {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .zabo {
+    font-size: 1.25rem;
+  }
+  .join-input {
+    width: 250px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .cart {
+    display: block;
+  }
+  footer{
+    gap: 10px;
+  }
+  .join-sec{
+    margin-top: 40px;
+  }
+  .latest-deal{
+    margin-top: 45px;
+  }
 }
